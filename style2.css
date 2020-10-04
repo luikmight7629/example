@@ -94,7 +94,7 @@ nav ul li:hover a
 	.content
 	{
 		position: absolute;
-		top: -80px;
+		top: -70px;
 		z-index: -1;
 		text-align: justify;
 		transition: .3s;
