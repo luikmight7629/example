@@ -6,50 +6,37 @@
 }
 .line
 {
-	border-left-style:solid;
-	border-top-style: solid; 
-	height: 50vh;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-width: 2px;
+	height: 59px;
+	transition: .3s;
 }
-img,#check
+img
 {
-	height: 25px;
+	height: 20px;
 	float: right;
-	display: none;
-}
-h1
-{
-	padding: 5px 0;
-}
-p
-{
-	padding: 10px 0;
-	text-align: justify;
 }
 nav
 {
 	background-color: #353a40;
+	height: 60px;
 	display: flex;
-	height: 60PX;
 	align-items: center;
-	justify-content: space-between;
-	padding: 0 20px;
-	position: relative;
+ 	justify-content:space-between; 
+ 	padding: 0 20px;
 }
 nav ul
 {
 	display: flex;
 	list-style: none;
-}
 
-nav ul li
-{
-	margin: 0 6px;
 }
 nav ul li a
 {
-	text-decoration: none;
+	padding: 0 10px;
 	color:#7C8080;
-	font-size: 17px;
+	text-decoration: none;
 }
 nav .logo
 {
@@ -58,82 +45,71 @@ nav .logo
 }
 nav ul li:hover a
 {
-	background-color: 
-	color: #fff;
+	color: #FFF;
 	transition: .3s;
 }
-	img:hover section{
-		top: 60px;
-	}
-.nav
+.nav, #check, img
 {
 	display: none;
 }
-
-@media (max-width: 985px)
+.content
 {
-	.line
+	padding: 10px 0;
+	text-align: justify;
+}.nav ul li:hover a
 	{
-		border-top-style: solid;
-		border-left-style: solid;
-		border-width: 5px;
+		color: #FFF;
+		transition: .3s;
 	}
+@media(max-width: 985px)
+{
 	nav ul
-	{ 
+	{
 		display: none;
+	}
+	.nav, img
+	{
+		display: block;
 	}
 	.nav
 	{
-		position: relative;
 		background-color: #353a40;
-		display: flex;
-		width: 100%;
-
-	}
-	.nav ul
-	{
-		list-style: none;
-		display: block;
-		width: 100%;
-		padding-left: 15px;
-		transition: .3s;
+		padding:10px 0; 
+		margin-bottom:10px; 
 	}
 	.nav ul li
 	{
-		padding: 5px 0;
+		padding: 5px 20px;
 	}
 	.nav ul li a
 	{
-	text-decoration: none;
-	color:#7C8080;
-	font-size: 17px;
+		color:#7C8080;
+		text-decoration:none; 
 	}
-	img
+	#check:checked ~ .content
 	{
-		display: flex;
-		float: left;
-		cursor: pointer;
+		top: 50px;
+		transition: .3s;
 	}
 	.content
 	{
 		position: absolute;
-		top: -48px;
-		transition: .3s;
+		top: -78px;
 		z-index: -1;
-		
-
-	}
-	
-	#check:checked ~ .content{
-		top:60px;
+		text-align: justify;
 		transition: .3s;
 	}
-	.line
+	.content ul li:hover a
+	{
+		color: #FFF;
+		transition: .3s;
+	}
+.line
 {
-	border-left-style:solid;
-	border-top-style: solid; 
-	height: 70vh;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-width: 7px;
+	height: 599px;
+	transition: .3s;
 }
 }
-
-
